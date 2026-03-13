@@ -17,7 +17,6 @@
     </properties>
 
     <dependencies>
-        <!-- Microsoft JDBC Driver for SQL Server -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
@@ -27,7 +26,6 @@
 
     <build>
         <plugins>
-            <!-- Package everything into a single runnable fat-jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -35,7 +33,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.Main</mainClass>
+                            <mainClass>Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
